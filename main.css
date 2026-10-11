@@ -224,6 +224,7 @@ hr {
     background-color: white;
     border-radius: 2%;
     color: black;
+    cursor: pointer;
 }
 
 .umiejetnosci-2 > h2 {
