@@ -53,9 +53,12 @@ body{
 }
 
 hr {
+    margin-top: 2%;
+    align-self: center;
     width: 100%;
     height: 2px;
     border: none;
+    margin-bottom: 2%;
 }
 
 .asystent{
@@ -91,6 +94,8 @@ hr {
     background-color: #D7D9B1;
     border-radius: 5%;
     border-color: #293241;
+    justify-items: center;
+    align-items: center;
     border: solid 5px;
 }
 
@@ -165,6 +170,62 @@ hr {
     margin-bottom: 7.5%;
     margin-top: 2.5%;
 }
+
+.asystent-zapytaj{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+
+.asystent-wygenerowano{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    color: black;
+    align-items: flex-end;
+}
+
+.asystent-wygenerowano > p{
+    width: 25%;
+    height: fit-content;
+    background-color: darkgray;
+    margin-left: 2.5%;
+    border-radius: 5%;
+}
+
+.asystent-wygenerowano > img{
+    width: 10%;
+    height: fit-content;
+    margin-left: 2.5%;
+    margin-bottom: 2%;
+}
+
+.asystent-zapytaj > input{
+    height: fit-content;
+    justify-self: center;
+    width: 65%;
+    align-self: center;
+    border: none;
+    border: 2px solid black;
+    border-radius: 2%;
+    color: black;
+}
+
+.asystent-zapytaj > button{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: fit-content;
+    width: 10%;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 2%;
+    color: black;
+}
+
 .umiejetnosci-2 > h2 {
     text-align: center;
 }
