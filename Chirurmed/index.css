@@ -1,11 +1,11 @@
 :root{
     --back: #645E9D;
     /* paleta kolorow mam nadzieję że będzie git */
-    /* #A09ABC
-    #B6A6CA
-    #D5CFE1
-    #E1DEE9
-    #D4BEBE */
+    --one: #A09ABC;
+    --two: #B6A6CA;
+    --three: #D5CFE1;
+    --four: #E1DEE9;
+    --five: #D4BEBE;
 }
 
 body{
@@ -14,6 +14,7 @@ body{
     height: 100vh;
     width: 100vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E1DEE9;
 }
 
 footer{
@@ -23,7 +24,7 @@ footer{
 .maingora{
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    background-color: #D5CFE1;
     width: 100%;
     height: 100px;
     align-items: center;
@@ -36,7 +37,7 @@ footer{
 
 #linki{
     display: flex;
-    background-color: beige;
+    background-color: #B6A6CA;
     width: 1000px;
     height: 50px;
 }
@@ -57,13 +58,16 @@ footer{
     color: red;
 }
 
-.banner{
+.banner {
     display: flex;
-    background: url(497664172-8d6abdd9-8198-4ef8-8d58-16285fd766b4.svg), var(--back);
     width: 100%;
     height: 300px;
-}
 
+    background-image: url("497664172-8d6abdd9-8198-4ef8-8d58-16285fd766b4");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .center{
     display: flex;
     flex-direction: column;
@@ -85,17 +89,24 @@ footer{
     border-left: 2px solid black;
 }
 
-.info{
+.info {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: antiquewhite;
-
+    box-sizing: border-box;
+    padding: 0 0 24px;
+    background-color: var(--three);
 }
-.footer-container{
-    display: flex;
-    height: auto;
-    width: 75%;
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    width: min(1100px, 90%);
+    min-height: 100px;
+    box-sizing: border-box;
+    background-color: var(--two);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
 }
 
 footer{
@@ -104,7 +115,7 @@ footer{
     background-color: black;
 }
 .naz{
-background-color: aquamarine;
+background-color: #B6A6CA;
 height: auto;
 width: 30%;
 display: flex;
@@ -112,7 +123,7 @@ justify-content: center;
 align-items: center;
 }
 .pol{
-background-color: aquamarine;
+background-color: #B6A6CA;
 height: auto;
 width: 30%;
 display: flex;
@@ -120,7 +131,7 @@ justify-content: center;
 align-items: center;
 }
 .mail{
-background-color: aquamarine;
+background-color: #B6A6CA;
 height: auto;
 width: 30%;
 display: flex;
@@ -128,7 +139,7 @@ justify-content: center;
 align-items: center;
 }
 .glowna{
-background-color: aquamarine;
+background-color: #B6A6CA;
 height: auto;
 width: 30%;
 display: flex;
@@ -136,13 +147,14 @@ justify-content: center;
 align-items: center;
 }
 .pbok{
-    background-color: rgb(217, 244, 250);
+    background-color: #D5CFE1;
     width: 30%;
     height: 70%;
     display: flex;
     justify-content:center;
     flex-direction: column;
     font-size: 15px;
+    border-radius: 10px;
 }
 .inf{
     margin-left: 40px;
@@ -157,9 +169,13 @@ margin-left: 10px;
 .rest{
     display: flex;
     justify-content: space-around;
+    color: var(--one)
+}
+.jasne{
+    color: var(--one);
 }
 .napisz{
-    background-color: rgb(205, 244, 235);
+    background-color: #D5CFE1;
     width: 30%;
     height: 70%;
     display: flex;
@@ -167,6 +183,7 @@ margin-left: 10px;
     align-items: center;
     flex-direction: column;
     font-size: 20px;
+    border-radius: 10px;
 }
 .tatapiecze{
     display: flex;
@@ -208,7 +225,7 @@ font-size:90px
 
   background: transparent;
   border: none;
-  border-bottom: 2px solid #d9f7fa;
+  border-bottom: 2px solid lavender;
   border-radius: 0;
   outline: none;
 
@@ -228,14 +245,71 @@ font-size:90px
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-bottom-color: #70dce5;
+  border-bottom-color: gray;
 }
 
 .contact-form button {
   align-self: flex-start;
   padding: 12px 28px;
   border: 0;
-  background: #70dce5;
-  color: #fff;
+  background: var(--one);
+  color: black;
   cursor: pointer;
+  border-radius: 5px;
+}
+.footer-container > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    min-height: 70px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.footer-container > section:not(:last-child) {
+    border-right: 1px solid var(--three);
+}
+
+.glowna {
+    background-color: transparent;
+}
+
+#mainlogo {
+    display: block;
+    width: 90px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.glowna a:hover #mainlogo {
+    transform: scale(1.05);
+}
+.naz,
+.mail,
+.pol {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Linki w stopce */
+
+.footer-container a {
+    color: var(--back);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-container a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
