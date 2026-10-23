@@ -14,7 +14,7 @@ if (cookies.textContent.trim().length === 0) {
 
 cookies.addEventListener("mouseenter", () => {
     cookies.textContent = "Kliknij tutaj, aby zapoznać się z polityką cookies";
-
+    stopped = false;
     cookies.style.textDecoration = "underline";
     cookies.style.color = "red";
     cookies.style.animation = "none";
