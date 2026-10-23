@@ -1,0 +1,137 @@
+:root{
+    --back: #645E9D;
+    /* paleta kolorow mam nadzieję że będzie git */
+    --one: #A09ABC;
+    --two: #B6A6CA;
+    --three: #D5CFE1;
+    --four: #E1DEE9;
+    --five: #D4BEBE;
+}
+
+#cookies {
+    display: flex;
+    justify-self: center;
+    animation: ruch 3s ease-in-out infinite alternate;
+}
+
+@keyframes ruch {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(25%);
+    }
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E1DEE9;
+}
+
+.maingora{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D5CFE1;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+#zdj_klinki{
+    width: 25%;
+    height: 25%;
+}
+
+#cookies{
+    font-size: medium;
+    text-decoration: none;
+}
+
+#mainlogo{
+    width: 150px;
+    height: 100px;
+}
+
+#linki{
+    display: flex;
+    background-color: #B6A6CA;
+    width: 1000px;
+    height: 50px;
+}
+
+.podstorny{
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.lynk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lynk:hover{
+    color: red;
+}
+
+.info{
+    width: 100%;
+    height: 75%;
+    background-color: royalblue
+}
+
+.info > h1{
+    text-align: center;
+}
+
+#info-block-1{
+    background-color: rebeccapurple;
+    width: 25%;
+    height: 55%;
+    text-align: center;
+    justify-self: center;
+    font-size: large;
+}
+
+#hr-1{
+    width: 85%;
+    border: 1.5px, solid, black;
+}
+
+.hrka{
+    width: 85%;
+    border: 1.5px, solid, black;
+}
+
+#a-name{
+    display: flex;
+    justify-self: center;
+    padding-top: 2.5%;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#a-name:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#info-block-name{
+    justify-self: center;
+    width: 75%;
+    height: 50%;
+    background-color: rosybrown;
+}
+
+.info2{
+    display: flex;
+    width: 25%;
+    height: 100%; 
+}
