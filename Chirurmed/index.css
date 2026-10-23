@@ -149,7 +149,7 @@ align-items: center;
 .pbok{
     background-color: #D5CFE1;
     width: 30%;
-    height: 70%;
+    height: 80%;
     display: flex;
     justify-content:center;
     flex-direction: column;
