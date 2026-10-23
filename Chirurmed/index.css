@@ -13,6 +13,7 @@ body{
     padding: 0;
     height: 100vh;
     width: 100vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer{
@@ -134,26 +135,107 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.gdoz{
-    background-color: blue;
+.pbok{
+    background-color: rgb(217, 244, 250);
     width: 30%;
     height: 70%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    flex-direction: column;
+    font-size: 15px;
+}
+.inf{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.godz{
+    display: flex;
+margin-left: 10px;
     align-items: center;
+    font-size: 16px;
+}
+.rest{
+    display: flex;
+    justify-content: space-around;
 }
 .napisz{
-    background-color: green;
+    background-color: rgb(205, 244, 235);
     width: 30%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 20px;
 }
 .tatapiecze{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 90%;
-    height: 75%;
+    height: 80%;
+}
+#tyt{
+font-size:90px
+}
+.rodzcictyt{
+    display: flex;
+    justify-content: center;
+}
+.hrinne{
+    height: 2px;
+    width:100%;
+    background-color: black;
+    border: 0;
+}
+.contact-form {
+  width: min(100%, 675px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 2px 22px;
+
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #555;
+
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #d9f7fa;
+  border-radius: 0;
+  outline: none;
+
+  transition: border-color 0.2s ease;
+}
+
+.contact-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a2a2a2;
+  opacity: 1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #70dce5;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  padding: 12px 28px;
+  border: 0;
+  background: #70dce5;
+  color: #fff;
+  cursor: pointer;
 }
