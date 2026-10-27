@@ -7,38 +7,26 @@
     <link rel="stylesheet" href="onas.css">
 </head>
 <body>
-    
-<section class="maingora"> <!-- Tutaj będzie logo, ewenteualne media i przekierowanie do innych stron -->
-    <a href="index.html">
-        <img src="0b3905f3-de00-4c4b-a41d-4068579f66b6.png" alt="Logo" id="mainlogo">
-    </a>
-    <section id="linki">
-        <nav class="podstorny">
-            <a href="index.html" class="lynk">Strona główna</a>
-            <a href="indexonas.html" class="lynk">O nas</a>
-            <a href="indexcennik.html" class="lynk">Cennik</a>
-            <a href="indexkontakt.html" class="lynk">Kontakt</a>
-        </nav>
-    </section>
-        
-    <section class="media"> <!-- Trzeba się dowiedzieć jakie media posiada -->
-        <a href="">
-            <img src="https://www.tiktok.com" alt="tiktok">
+    <section class="maingora"> <!-- Tutaj będzie logo, ewenteualne media i przekierowanie do innych stron -->
+        <a href="index.html">
+            <img src="logo.png" alt="Logo" id="mainlogo">
         </a>
-        <a href="">
-            <img src="https://www.instagram.com" alt="instagram">
-        </a>
-        <!-- ect. -->   
+        <section id="linki">
+            <nav class="podstorny">
+                <a href="index.html" class="lynk">Strona główna</a>
+                <a href="indexonas.html" class="lynk">O nas</a>
+                <a href="indexcennik.html" class="lynk">Cennik</a>
+                <a href="indexkontakt.html" class="lynk">Kontakt</a>
+            </nav>
+        </section>
+            
+        <p>Strona: Informacyjna</p>
+
     </section>
 
-</section>
 
-
-<section class="info">
+    <section class="info">
         <section>
-            <a href="index.html"> <!-- przekierowanie na strone główną -->
-                <img src="0b3905f3-de00-4c4b-a41d-4068579f66b6.png" alt="logo" id="mainlogo">
-            </a>
         </section>
         <h1 id="info2">Informacje</h1>
         <section id="info-block-1">
@@ -48,8 +36,18 @@
                 <hr id="hr-1">
 
                 <p>Ul. jakaś tam idk</p>
+                <p>Własciciel kliniki: </p>
+                <p>Godziny otwarcia: </p>
 
-                <img src="zdj_kliniki.png" alt="zdj_kliniki" id="zdj_klinki">
+                <ul>
+                    <li>Poniedziałek | 8:00 -> 18:00</li>
+                    <li>Wtorek | 8:00 -> 18:00</li>
+                    <li>Środa | 8:00 -> 18:00</li>
+                    <li>Czwartek | 8:00 -> 18:00</li>
+                    <li>Piątek | 8:00 -> 16:00</li>
+                    <li>Sobota | 9:00 -> 14:00</li>
+                    <li>Niedziela | ZAMKNIĘTE!</li>
+                </ul>
             </section>
             <br>
             <a href="indexPolCok.html" id="cookies"></a>
@@ -58,26 +56,38 @@
             <section id="bellow-info-blocks">
                 <hr class="hrka">
                 <p>emain@costam.com<br>numer (+48) 000 000 000</p>
+
+                <h2>Status Kliniki:</h2>
+                <p id="open-status">tutaj bedzie display (przez js), czy klinika jest otwarta w tym momencie</p>
+
             </section>
+
         </section>
-    <section class="footer-container">
-
     </section>
-</section>
 
-<footer>
 
-</footer>
 
-    <section class="media"> <!-- Trzeba się dowiedzieć jakie media posiada -->
-        <a href="">
-            <img src="" alt="tiktok">
-        </a>
-        <a href="">
-            <img src="" alt="instagram">
-        </a>
-        <!-- ect. -->   
-</section>
+    <footer>
+        <section class="media">
+
+            <a href="https://tiktok.com" id="tiktok-hold">
+                <section class="logo-box">
+                    <img src="ttlogo.png" alt="TikTok" id="ttlogo">
+                </section>
+                <p>Nasz TikTok: @nazwa_kliniki</p>
+            </a>
+
+            <p>NAZWA_KLINIKI © 2026 Wszystkie prawa zastrzeżone</p>
+
+            <a href="https://instagram.com" id="instagram-hold">
+                <section class="logo-box">
+                    <img src="instalogo.webp" alt="Instagram" id="instalogo">
+                </section>
+                <p>Nasz Instagram: @nazwa_kliniki</p>
+            </a>
+
+        </section>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
