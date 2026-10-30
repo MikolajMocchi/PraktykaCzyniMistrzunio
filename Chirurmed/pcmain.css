@@ -1,0 +1,227 @@
+:root{
+    --back: #645E9D;
+    /* paleta kolorow mam nadzieję że będzie git */
+    --one: #A09ABC;
+    --two: #B6A6CA;
+    --three: #D5CFE1;
+    --four: #E1DEE9;
+    --five: #D4BEBE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E1DEE9;
+}
+
+.maingora{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D5CFE1;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+#anim{
+    justify-self: center;
+    color: var(--back);
+}
+
+#zdj_klinki{
+    width: 25%;
+    height: 25%;
+}
+
+#cookies{
+    font-size: medium;
+    text-decoration: none;
+}
+
+#mainlogo{
+    width: 150px;
+    height: 100px;
+}
+
+#linki{
+    display: flex;
+    background-color: #B6A6CA;
+    width: 1000px;
+    height: 50px;
+}
+
+.podstorny{
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.lynk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lynk:hover{
+    color: red;
+}
+
+.info {
+    flex: 1;
+    width: 100%;
+    background-color: var(--four);
+}
+
+.info > h1{
+    text-align: center;
+}
+
+#open-status{
+    padding-bottom: 2.5%;
+}
+
+h2{
+    color: var(--one);
+}
+
+#info-block-name ul {
+    width: max-content;
+    max-width: 100%;
+    margin: 10px auto;
+    padding-left: 20px;
+    text-align: left;
+    list-style-position: outside;
+}
+
+#info-block-name li {
+    padding: 5px 0;
+}
+
+#info-block-name {
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#info-block-1 {
+    background-color: var(--three);
+    border-radius: 15px;
+    width: 25%;
+    min-height: 55%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+}
+
+#hr-1{
+    width: 85%;
+    border: 1.5px, solid, black;
+}
+
+.hrka{
+    width: 85%;
+    border: 1.5px, solid, black;
+}
+
+#a-name{
+    display: flex;
+    justify-self: center;
+    padding-top: 2.5%;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#a-name:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.info2{
+    display: flex;
+    width: 25%;
+    height: 100%; 
+}
+
+footer {
+    width: 100%;
+    background-color: var(--two);
+    padding: 20px 0;
+}
+
+footer .media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+#tiktok-hold, #instagram-hold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#tiktok-hold {
+    justify-self: start;
+    margin-left: 20px;
+}
+
+#instagram-hold {
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.logo-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+#tiktok-hold > p, #instagram-hold > p {
+    margin: 0;
+    text-align: center;
+    text-decoration:none;
+}
+
+
+#tiktok-hold:hover, #instagram-hold:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+#instagram-hold p:hover {
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#tiktok-hold p:hover {
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer .media > p {
+    margin: 0;
+    text-align: center;
+}
