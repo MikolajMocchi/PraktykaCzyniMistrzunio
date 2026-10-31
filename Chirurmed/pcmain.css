@@ -71,13 +71,13 @@ body {
     color: red;
 }
 
-.info {
+.infor {
     flex: 1;
     width: 100%;
     background-color: var(--four);
 }
 
-.info > h1{
+.infor > h1{
     text-align: center;
 }
 
@@ -146,7 +146,7 @@ h2{
     text-decoration: underline;
 }
 
-.info2{
+.infor2{
     display: flex;
     width: 25%;
     height: 100%; 
@@ -224,4 +224,30 @@ footer .media {
 footer .media > p {
     margin: 0;
     text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 24px;
+    background-color: var(--three);
+}
+.footer-container {
+    display: flex;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: center;
+    width: min(1100px, 90%);
+    min-height: 100px;
+    box-sizing: border-box;
+    background-color: var(--two);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.hrk {
+    height: 70px;
+    border: none;
+    border-left: 2px solid black;
 }
